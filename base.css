@@ -31,3 +31,13 @@ body {
 }
 
 
+.back {
+    color: red;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+.back:hover {
+    background-color: rgb(88, 209, 209);
+}
