@@ -1,0 +1,22 @@
+
+.basic-grid {
+    display: grid;
+    grid-gap: 1rem;
+
+    /* 1st - skinny cards, too much code */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+
+    /* 2nd - cleaner version */
+        /* grid-template-columns: repeat(12, 1fr); */
+
+    /* 3rd - better sizing but it overflows */
+        /* grid-template-columns: repeat(12, minmax(240px, 1fr)); */
+                    /* repeat 12 times | min = 240px | max = 1fr */
+
+    /* 4th - responsive | Implicit grid */
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                    /* auto-fit calc the MINMAX VALUE to resize on the fly | min = 240px | max = 1fr */
+}
+
+
+
